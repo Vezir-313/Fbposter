@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	
+	<title>Publishing</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.css"> -->
+
+
+
+    <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src='js/moment.min.js'></script>
+    <script src="js/jquery-3.2.1.js"></script>
+ 	<script src='js/fullcalendar.min.js'></script>
+
+</head>
+<body>
+	<div id="fullcontent">
+		<header>
+			<div class="container-fluid left-reset">
+				<div class="row">
+					<div class="col-lg-1 hidden-sm hidden-xs" id="logo-acitve">
+						<div class="logo-sector">
+							<div class="back-color">
+								<div class="img-area">
+									<a href="">
+										<img src="img/combined-Shape.png" alt="" >
+									</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="toggle-menu-bar">
+					    	<img src="img/group-1.png" alt="" id="menu-bar-btn">
+							<span>Publishing</span>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="user-profil">
+								
+								<div class="col-lg-6 pull-right">
+									<div class="user">
+										<div class="profil-item pull-right">
+											<div class="profil-img pull-left">
+												<img class="img-circle " width="45px" height="45px" src="img/a.jpg">
+												<span></span>
+											</div>
+											<span class="hidden-xs" >Hello, Mark Velmiskin</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-md-6 reset-mar-pad pull-right head-btns">
+									<div class="confirm-but">
+										<button class="cancel btn" id="cancel-del-pos">Cancel</button>
+
+										<button class="delete-user-red btn" id="delete-post-acces">Delete post</button>
+
+										<button class="delete-user-red btn" id="delete-post-sel">Delete selected</button>
+										
+										<button class="clear-log btn" id="clear-log-btn">Clear log</button>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		</header>
+		<div id="main_content">
+				<div class="col-md-1 left-reset">
+					<aside class="hidden-xs hidden-sm aside hidden-print nav-xs" id="nav-aside">
+                        <nav>
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="newpost.html" title="Add post">
+                                        <img src="img/menu-icons/plus.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item active-nav" title="Publishing">
+                                    <a href="publishing.html">
+                                        <img src="img/menu-icons/2.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="insights.html" title="Insights">
+                                        <img src="img/menu-icons/statisticks.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="accounts.html" title="Accounts">
+                                        <img src="img/menu-icons/users.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="settings.html" title="Settings">
+                                        <img src="img/menu-icons/settings.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+					<div id="side-nav">
+						
+						<a href="javascript:void(0)" class="close-btn" id="close-sidenav">&times;</a>
+						<nav class="nav-primary">
+							<ul class="nav">
+								<li >
+									<a href="" class="auto font-bold">
+										<i class="material-icons">home</i>
+										<span>Fbposter</span>
+									</a>
+								</li>
+								<li  >
+									<a href="newpost.html" class="auto font-bold">
+										<i class="material-icons">add_circle_outline</i>
+										<span>Add post</span>
+									</a>
+								</li>
+								<li class="active">
+									<a href="publishing.html" class="auto font-bold">
+										<i class="material-icons">filter_none</i>
+										<span>Publishing</span>
+									</a>
+								</li>
+								<li  >
+									<a href="insights.html" class="auto font-bold">
+										<i class="material-icons">timeline</i>
+										<span>Insights</span>
+									</a>
+								</li>
+								<li  >
+									<a href="accounts.html" class="auto font-bold">
+										<i class="material-icons">group</i>
+										<span>Accounts</span>
+									</a>
+								</li>
+								<li >
+									<a href="settings.html" class="auto font-bold">
+										<i class="material-icons">trending_up</i>
+										<span>Settings</span>
+									</a>
+								</li>
+								<li  >
+									<a href="login.html" class="auto font-bold">
+										<i class="material-icons">power_settings_new</i>
+										<span>Logout</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="content-holder">
+					<div id="main_section">
+				<!-- ============================= Render   Body ===============================		 -->
+					<div id="horizontalTab">
+
+						<ul class="resp-tabs-list" style="height: 63px;">
+							<li class="tab-acc" tabindex="1">ALL POSTS</li>
+							<li class="tab-acc" tabindex="2">Scheduled Posts</li>
+							<li class="tab-acc" tabindex="3">Schedule Logs</li>
+
+							<li class="tab-acc" tabindex="4">Saved Posts</li>
+						</ul>
+							
+						<div class="resp-tabs-container">
+							
+							
+							<div>
+						<!--  ===============section 1  ===============  -->
+								    <script>
+								        $(document).ready(function() {
+
+								            $('#calendar').fullCalendar({
+								                defaultDate: '2017-10-12',
+								                editable: true,
+								                contentHeight: 'auto',
+								                eventLimit: true, // allow "more" link when too many events
+								                events: [{
+								                        id: 999,
+								                        title: 'Scheduled post',
+								                        start: '2017-10-01'
+								                    },
+								                    {
+								                        title: 'Saved Post',
+								                        start: '2017-10-05',
+								                        //					end: '2017-10-13',
+								                        color: '#FF9900'
+								                    },
+								                    {
+								                        title: '+10 Post',
+								                        start: '2017-10-05',
+								                        //					end: '2017-10-13',
+								                        color: '#18B6FF'
+								                    },
+								                    {
+								                        title: 'Scheduled Post',
+								                        start: '2017-10-10',
+								                        url: 'http://google.com/',
+								                        color: "#ccc"
+								                    },
+								                    {
+								                        title: 'Schedul Log',
+								                        start: '2017-10-10',
+								                        url: 'http://google.com/',
+								                        color: "#ccc"
+								                    }
+								                ]
+								            });
+
+								        });
+								    </script>
+								    <style>
+
+								       
+								    </style>
+								    
+								        <div id='calendar'></div>
+
+								         <section id="account-calendar">
+								            <div class="row">
+								                <div class="account">
+								                	 <div class="col-md-12" >
+								                	 	<div class="calendar-holder" id="open-calendar-btn">
+								                	 			<p>open calendar</p>
+								                	 	</div>
+								                	 </div>
+								                    <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+								                        <div class="con ">
+								                            <div style="background-image: url(img/me.jpg)" class=" profil_photo saved-post-bor">
+								                            </div>
+								                            <div class="description"><p>There are many variations passages of lorem</p></div>
+								                            <div class="status"><p class="saved-post"> <span>Saved post</span></p></div>
+								                            <div class="date">
+								                                <img src="img/menu/calendar.png">
+								                                <p class="his">26/09/2017 11:31</p>
+								                            </div>
+								                        </div>
+								                    </div>
+
+								                    <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+								                        <div class="con ">
+								                            <div style="background-image: url(img/mu.jpg)" class="profil_photo scheduled-post-bor">
+								                                
+								                            </div>
+								                            <div class="description"><p>There are many variations passages of lorem</p></div>
+								                            <div class="status"><p class="scheduled-post">Scheduled Post</p></div>
+								                            
+								                            <div class="date">
+								                                <img src="img/menu/calendar.png">
+								                                <p class="his">26/09/2017 11:31</p>
+								                            </div>
+								                        </div>
+								                    </div>
+
+								                    <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+								                        <div class="con ">
+								                            <div style="background-image: url(img/mu.jpg)" class="profil_photo schedule-post-bor">
+								                                
+								                            </div>
+								                            <div class="description"><p>There are many variations passages of lorem</p></div>
+								                            <div class="status"><p class="schedule-post">Scheduled Post</p></div>
+								                            
+								                            <div class="date">
+								                                <img src="img/menu/calendar.png">
+								                                <p class="his">26/09/2017 11:31</p>
+								                            </div>
+								                        </div>
+								                    </div>
+
+								                    <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+								                        <div class="con ">
+								                            <div style="background-image: url(img/me.jpg)" class=" profil_photo saved-post-bor">
+								                            </div>
+								                            <div class="description"><p>There are many variations passages of lorem</p></div>
+								                            <div class="status"><p class="saved-post">Saved post</p></div>
+								                            <div class="date">
+								                                <img src="img/menu/calendar.png">
+								                                <p class="his">26/09/2017 11:31</p>
+								                            </div>
+								                        </div>
+								                    </div>
+
+								                    
+								        </div>
+								    </div>
+								    </section>
+								   
+						<!-- ============= end section 1   ================== -->
+							</div>
+
+
+							<div>
+						<!--  ===============section 2  ===============  -->
+								 <div class="mar-top-20">
+
+							            <table class="table-1 main-style table table-bordered" id="simple_table">
+							                <thead class="grey white">
+							                    <tr>
+							                        <th>Next posting time</th>
+							                        <th>Post interval</th>
+							                        <th>Post</th>
+							                        <th>fb app</th>
+							                        <th>Fb account</th>
+							                        <th>Status</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td>28/10/2018 10:46</td>
+							                        <td>30 minutes</td>
+							                        <td>---------</td>
+							                        <td>---------</td>
+							                        <td>Mark Velmiskin</td>
+							                        <td>---------</td>
+							                    </tr>
+							                    <tr>
+							                        <td>31/10/2017 11:30</td>
+							                        <td>29 minutes</td>
+							                        <td>---------</td>
+							                        <td>---------</td>
+							                        <td>Saida Abbasova</td>
+							                        <td>---------</td>
+							                    </tr>
+							                </tbody>
+							            </table>
+
+							            <table class="table-1 main-style table table-bordered" style="border: none;" id="checked_table">
+							                <thead class="grey white">
+							                    <tr>
+							                        <th class="hiddenTh"></th>
+							                        <th>Next posting time</th>
+							                        <th>Post interval</th>
+							                        <th>Post</th>
+							                        <th>fb app</th>
+							                        <th>Fb account</th>
+							                        <th>Status</th>
+							                    </tr>
+							                </thead>
+							                <tbody>
+							                    <tr>
+							                        <td class="borderNone">
+							                            <div class="ch-1">
+							                                <input type="checkbox" id="cbtest1" />
+							                                <label for="cbtest1" class="check-box red"></label>
+
+							                            </div>
+							                        </td>
+							                        <td>28/10/2018 10:46</td>
+							                        <td>30 minutes</td>
+							                        <td>---------</td>
+							                        <td>---------</td>
+							                        <td>Mark Velmiskin</td>
+							                        <td>---------</td>
+							                    </tr>
+							                    <tr>
+							                        <td class="borderNone">
+							                            <div class="ch-2">
+							                                <input type="checkbox" id="cbtest2" />
+							                                <label for="cbtest2" class="check-box red"></label>
+
+							                            </div>
+							                        </td>
+							                        <td>31/10/2017 11:30</td>
+							                        <td>29 minutes</td>
+							                        <td>---------</td>
+							                        <td>---------</td>
+							                        <td>Saida Abbasova</td>
+							                        <td>---------</td>
+							                    </tr>
+							                </tbody>
+							            </table>
+							    </div>
+						<!-- ============= end section 2   ================== -->
+							</div>
+
+
+							<div>
+						<!--  ===============section 3  ===============  -->
+								<div class="mar-top-20">
+									<table class="table-1 main-style table table-bordered">
+						                <thead class="grey white">
+						                    <tr>
+						                        <th>Published on</th>
+						                        <th>Node</th>
+						                        <th>Node type</th>
+						                        <th>Post details</th>
+						                    </tr>
+						                </thead>
+						                <tbody>
+						                    <tr>
+						                        <td>28/10/2018 10:46</td>
+						                        <td>----------</td>
+						                        <td>----------</td>
+						                        <td>----------</td>
+
+						                    </tr>
+						                    <tr>
+						                        <td>31/10/2017 11:30</td>
+						                        <td>----------</td>
+						                        <td>----------</td>
+						                        <td>----------</td>
+						                    </tr>
+						                </tbody>
+						            </table>
+								</div>
+						<!-- ============= end section 3   ================== -->
+							</div>
+
+
+							<div>
+						<!--  ===============section 4  ===============  -->
+								 <section id="account">
+						                <div class="row">
+						                    <div class="account">
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con ">
+						                                <div style="background-image: url(img/me.jpg)" class=" y_b profil_photo">
+						                                </div>
+						                                <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Message</p></div>
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con ">
+						                                <div style="background-image: url(img/mu.jpg)" class=" y_b profil_photo">
+						                                    
+						                                </div>
+						                                <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Status</p></div>
+						                                
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con">
+						                                <div class="profil_photo y_b"style="background-image:url(img/sa.jpg)" >
+						                                </div>
+						                               <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Video</p></div>
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con">
+						                                <div class="profil_photo y_b" style="background-image:url(img/a.jpg)">
+						                                </div>
+						                                <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Image</p></div>
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+
+
+
+
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con ">
+						                                <div style="background-image: url(img/me.jpg)" class=" y_b profil_photo">
+						                                </div>
+						                                <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Message</p></div>
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con ">
+						                                <div style="background-image: url(img/mu.jpg)" class=" y_b profil_photo">
+						                                    
+						                                </div>
+						                                <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Status</p></div>
+						                                
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con">
+						                                <div class="profil_photo y_b" style="background-image:url(img/sa.jpg)" >
+						                                </div>
+						                               <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Video</p></div>
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con">
+						                                <div class="profil_photo y_b" style="background-image:url(img/a.jpg)">
+						                                </div>
+						                                <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Image</p></div>
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+
+
+
+
+
+
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con ">
+						                                <div style="background-image: url(img/me.jpg)" class=" y_b profil_photo">
+						                                </div>
+						                                <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Message</p></div>
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con ">
+						                                <div style="background-image: url(img/mu.jpg)" class=" y_b profil_photo">
+						                                    
+						                                </div>
+						                                <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Status</p></div>
+						                                
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con">
+						                                <div class="profil_photo y_b" style="background-image:url(img/sa.jpg)" >
+						                                </div>
+						                               <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Video</p></div>
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+						                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+						                            <div class="con">
+						                                <div class="profil_photo y_b" style="background-image:url(img/a.jpg)">
+						                                </div>
+						                                <div class="description"><p>There are many variations passages of lorem</p></div>
+						                                <div class="status"><p>Image</p></div>
+						                                <div class="date">
+						                                    <img src="img/menu/calendar.png">
+						                                    <p class="his">26/09/2017 11:31</p>
+						                                </div>
+						                            </div>
+						                        </div>
+
+
+						                        
+						            </div>
+						        </div>
+						        </section>
+						<!-- ============= end section 4   ================== -->
+							</div>
+
+						</div>	
+
+					</div>
+
+
+						
+
+
+				<!-- ======================== END Render   Body  END===============================		 -->
+
+					</div>
+			</div>		
+		</div>
+
+		<footer>
+			<div class="container-fluid left-reset">
+				<div class="row">
+					<div class="col-md-1 hidden-sm hidden-xs">
+						<div class="logo-sector">
+							<div class="back-color">
+								<div class="img-area">
+									<a href="">
+										<img class="logout1" src="img/logout.png" alt="">
+										<img class="logout2" src="img/logout-2.png" alt="">
+									</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-11">
+						<div class="foot-sector">
+							<span class="foot-text">© 2017 Fbposter.  All rights reserved</span>
+						</div>
+					</div>
+
+				</div>
+			</div>		
+		</footer>
+	</div>	
+</body>
+
+
+
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/easy-responsive-tabs.js"></script>
+</html>

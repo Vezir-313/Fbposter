@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>New post</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		
+
+		<link rel="stylesheet" type="text/css" href="css/vendor.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="plugin/dropzone/dropzone.js"></script>
+		<script type="text/javascript" src="plugin/emoji/jquery.emojiarea.js"></script>
+		<!-- <script type="text/javascript" src="plugin/dropzone/dropzone-amd-module.min.js"></script> -->
+	</head>
+	<body>
+		<div id="fullcontent">
+			<header>
+				<div class="container-fluid left-reset">
+					<div class="row">
+						<div class="col-md-1 hidden-sm hidden-xs" id="logo-acitve">
+							<div class="logo-sector">
+								<div class="back-color">
+									<div class="img-area">
+										<a href="">
+											<img src="img/combined-Shape.png" alt="" >
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="toggle-menu-bar">
+								<img src="img/group-1.png" alt="" id="menu-bar-btn">
+								<span>New post</span>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="user-profil">
+								
+								<div class="col-md-12">
+									<div class="user">
+										<div class="profil-item pull-right">
+											<div class="profil-img pull-left">
+												<img class="img-circle" width="45px" height="45px" src="img/a.jpg">
+												<span></span>
+											</div>
+											<span class="hidden-xs" >Hello, Mark Velmiskin</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</header>
+			<div id="main_content">
+				<div class="col-md-1 left-reset">
+					<aside class="hidden-xs hidden-sm aside hidden-print nav-xs" id="nav-aside">
+                        <nav>
+                            <ul>
+                                <li class="nav-item active-nav">
+                                    <a href="newpost.html" title="Add post">
+                                        <img src="img/menu-icons/plus.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item" title="Publishing">
+                                    <a href="publishing.html">
+                                        <img src="img/menu-icons/2.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="insights.html" title="Insights">
+                                        <img src="img/menu-icons/statisticks.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="accounts.html" title="Accounts">
+                                        <img src="img/menu-icons/users.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="settings.html" title="Settings">
+                                        <img src="img/menu-icons/settings.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+					<div id="side-nav">
+						
+						<a href="javascript:void(0)" class="close-btn" id="close-sidenav">&times;</a>
+						<nav class="nav-primary">
+							<ul class="nav">
+								<li >
+									<a href="" class="auto font-bold">
+										<i class="material-icons">home</i>
+										<span>Fbposter</span>
+									</a>
+								</li>
+								<li class="active">
+									<a href="newpost.html" class="auto font-bold">
+										<i class="material-icons">add_circle_outline</i>
+										<span>Add post</span>
+									</a>
+								</li>
+								<li  >
+									<a href="publishing.html" class="auto font-bold">
+										<i class="material-icons">filter_none</i>
+										<span>Publishing</span>
+									</a>
+								</li>
+								<li  >
+									<a href="insights.html" class="auto font-bold">
+										<i class="material-icons">timeline</i>
+										<span>Insights</span>
+									</a>
+								</li>
+								<li  >
+									<a href="accounts.html" class="auto font-bold">
+										<i class="material-icons">group</i>
+										<span>Accounts</span>
+									</a>
+								</li>
+								<li >
+									<a href="settings.html" class="auto font-bold">
+										<i class="material-icons">trending_up</i>
+										<span>Settings</span>
+									</a>
+								</li>
+								<li >
+									<a href="login.html" class="auto font-bold">
+										<i class="material-icons">power_settings_new</i>
+										<span>Logout</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="content-holder">
+					<div id="main_section">
+						<!-- ============================= Render   Body ===============================		 -->
+						<div id="newPost">
+						<div class="row">
+								<div class="col-md-6" >
+									<div class="left-side" >
+										<div id="left-content-1" >
+											<div class="navbar add-post-tabs">
+
+												<div class="col-md-12">
+
+													<ul>
+														<li class="active-tab" tabindex="1">
+															<img src="img/menu/status.png">
+															<span>Status</span>
+														</li>
+														<li tabindex="2">
+															<img src="img/menu/link.png">
+															<span>Link</span>
+														</li>
+														<li tabindex="3">
+															<img src="img/menu/image.png">
+															<span>Image</span>
+														</li>
+														<li tabindex="4">
+															<img src="img/menu/video.png">
+															<span>Video</span>
+														</li>
+													</ul>
+												</div>
+												<div class="clearfix"></div>
+											</div>	
+
+											<div class="col-md-12">
+												<div class="form-section">
+													<div class="add-post-contents">
+														<div class="content-item active-content">
+															<form>	
+																<div class="form-group">
+																	<label for="message">Message:</label>
+																	<div data-emojiarea data-type="unicode" data-global-picker="false" class="textarea-section" style="position: relative;">
+														                <div class="emoji-button">&#x1f60e;</div>
+														                <textarea id="input1" rows="10" class="form-control"></textarea>
+														            </div>
+																</div>
+
+																<div class="form-group">
+																	<label for="post-interval">Post interval (Seconds):</label>
+																	 <select class="form-control">
+																	 	<option value=""></option>
+																	 	<option value="">1</option>
+																	 	<option value="">2</option>
+																	 	<option value="">3</option>
+																	 </select>
+																</div>
+															</form>	
+														</div>	
+
+														<div class="content-item">
+															<div class="form-group">
+																<form>
+																	<label for="link">Link:</label>
+																	 <textarea rows="10" class="form-control"></textarea>
+																</form>
+															</div>
+														</div>
+
+														<div class="content-item dropdown-content">
+															<form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
+																<input name="file" style="display: none;" type="file" multiple />
+															</form>	
+														</div>
+
+														<div class="content-item dropdown-content">
+															<form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
+																<input name="file" style="display: none;" type="file" multiple />
+															</form>	
+														</div>
+													</div>	
+
+													<div class="form-group">
+														<button class="orrange-btn-bc" id="scheduled-post">
+															 Scheduled Posts
+														</button>
+														<button class="main-btn-bc">
+															 Send now
+														</button>
+														<button class="second-btn-bc">
+															 Save post
+														</button>
+													</div>
+
+													
+												</div>
+											</div>
+										</div>
+
+
+						<!-- ==========	left-content-2 	========= -->
+
+										<div id="left-content-2">
+											<div class="col-md-12">
+												<div class="form-section">
+													<div class="add-post-contents">
+														<form>	
+															<div class="form-group">
+																<label for="message">Post interval:</label>
+																
+															</div>
+
+															<div class="form-group pad-reset">
+																<div class="col-md-8 reset-mar-pad">
+																	<div class="settings-option ">
+																		<div class="group checkbox-holder">
+																			<div class="custom-checkbox">
+																			    <input id='id-1' type="radio"  name="duration">
+																			    <label for="id-1" class='checkbox'></label>
+																			  </div>
+																			<label class="checkbox-title" for="id-1">Minutes</label>
+																		</div>
+
+																		<div class="group checkbox-holder">
+																			<div class="custom-checkbox">
+																			    <input id='id-2' type="radio" name="duration" checked>
+																			    <label for="id-2" class='checkbox'></label>
+																			 </div>
+																			<label class="checkbox-title" for="id-2">Hours</label>
+																		</div>
+																	</div>
+																</div>
+																<div class="date-app-control">
+																	
+																
+																	<div class="col-md-4 reset-mar-pad">
+																		<select>
+																			<option value="">1</option>
+																			<option value="">2</option>
+																			<option value="">3</option>
+																		</select>
+																	</div>
+																	<div class="col-md-6 reset-mar-pad mar-top-20 md-pad-r15">
+									                                    <label class="labelText" for="date">Schedule post Start:</label>
+									                                    <input type="text" class="form-control modalInputs dateInput" id="date" aria-describedby="sizing-addon1">
+									                                    <div class="calendar"><img src="img/calendar.png"></div>
+									                                </div>
+									                            </div>    
+
+								                                <div class="col-md-6 reset-mar-pad mar-top-20">
+								                                    <label class="labelText" for="date">Facebook app:</label>
+								                                    <select>
+																		<option value="">1</option>
+																		<option value="">2</option>
+																		<option value="">3</option>
+																	</select>
+								                                </div>
+
+															</div>
+
+															<div class="col-md-12  reset-mar-pad mar-top-20">
+								                                    <label class="labelText" for="date">Auto pause after (posts):</label>
+								                                    <select>
+																		<option value="">1</option>
+																		<option value="">2</option>
+																		<option value="">3</option>
+																	</select>
+							                                </div>
+
+							                                <div class="mar-top-20">
+							                                	<div class="form-group">
+																	<label for="message">Auto resume after:</label>
+																	
+																</div>
+							                                </div>
+
+															<div class="form-group pad-reset">
+																<div class="col-md-8 reset-mar-pad">
+																	<div class="settings-option ">
+																		<div class="group checkbox-holder">
+																			<div class="custom-checkbox">
+																			    <input id='id-3' type="radio" checked name="resume">
+																			    <label for="id-3" class='checkbox'></label>
+																			  </div>
+																			<label class="checkbox-title" for="id-3">Minutes</label>
+																		</div>
+
+																		<div class="group checkbox-holder">
+																			<div class="custom-checkbox">
+																			    <input id='id-4' type="radio" name="resume">
+																			    <label for="id-4" class='checkbox'></label>
+																			 </div>
+																			<label class="checkbox-title" for="id-4">Hours</label>
+																		</div>
+																	</div>
+																</div>
+																<div class="date-app-control">
+																	
+																
+																	<div class="col-md-4 reset-mar-pad">
+																		<select class="bc-color-gray">
+																			<option value="">1</option>
+																			<option value="">2</option>
+																			<option value="">3</option>
+																		</select>
+																	</div>
+																	<div class="col-md-6 reset-mar-pad mar-top-20 md-pad-r15">
+									                                    <label class="labelText" for="date">Schedule post Start:</label>
+									                                    <input type="text" class="form-control modalInputs dateInput" id="date" aria-describedby="sizing-addon1">
+									                                    <div class="calendar"><img src="img/calendar.png"></div>
+									                                </div>
+									                            </div>    
+
+								                                <div class="col-md-6 reset-mar-pad mar-top-20">
+								                                    <label class="labelText" for="date">Facebook app:</label>
+								                                    <select>
+																		<option value="">1</option>
+																		<option value="">2</option>
+																		<option value="">3</option>
+																	</select>
+								                                </div>
+
+															</div>
+
+															<div class="form-group">
+																<button class="orrange-btn-bc" id="complete-post" type="button">
+																	 Complete
+																</button>
+															</div>
+
+
+														</form>	
+
+													</div>
+													
+												</div>
+											</div>
+										</div>
+						<!-- ==========	end left-content-2 	========= -->
+		
+										<div class="clearfix"></div>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="right-side">
+										<div class="head-section">
+											<div class="col-md-12">
+												<div class="post-wrapper">
+													<img src="img/menu/status.png">
+													<span>Post preview</span>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+
+										<div class="content-section">
+											<div class="col-md-12">
+												<div class="user-profil">
+													<div class="user-img">
+														<img src="img/a.png" class="img-circle" alt="">
+													</div>
+													<div class="about-user">
+														<p>Facebook User</p>
+														<span>Now · App name</span>
+													</div>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="clearfix visible-md-block"></div>
+								<div class="col-md-12">
+									<div class="result-content">
+									
+										<div class="col-md-6">
+											<div class="result-info">
+												<p>Groups : 0 | Pages : 0 | Elapsed : - | Time left : -</p>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="result-confirm pull-right">
+												<button class="second-btn-bc">Pause </button>
+												<button class="main-btn-bc">Resume</button>
+											</div>
+										</div>
+									</div>
+								</div>
+									<div class="clearfix"></div>
+
+								<div class="clearfix"></div>
+
+									<div class="col-md-12">
+										<div class="settings-content">
+									
+										<div class="col-md-2">
+											<div class="settings-range">
+												<select>
+													<option value="">All</option>
+													<option value="">Only friends</option>
+													<option value="">Only me</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="settings-confirm ">
+												<button class="main-btn-bc thin-button">+ Create new category</button>
+												<button class="main-btn-bc thin-button">+ Add</button>
+												<button class="main-btn-bc thin-button">+ Unhide</button>
+												<button class="red-btn thin-button">+ Hide node</button>
+											</div>
+										</div>
+
+										<div class="col-md-4">
+											<div class="settings-option ">
+												<div class="group checkbox-holder">
+													<input type="checkbox" id="cbtest">
+													<label for="cbtest" class="check-box"></label>
+													<label class="checkbox-title" for="">Groups</label>
+												</div>
+
+												<div class="group checkbox-holder">
+													<input type="checkbox" id="cbtest1">
+													<label for="cbtest1" class="check-box"></label>
+													<label class="checkbox-title" for="">Pages</label>
+												</div>
+
+												<div class="group checkbox-holder">
+													<input type="checkbox" id="cbtest2">
+													<label for="cbtest2" class="check-box"></label>
+													<label class="checkbox-title" for="">Show Hidden nodes</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>	
+
+						</div>
+					
+
+<!-- ======================== END Render   Body  END===============================		 -->
+					</div>
+			</div>
+</div>
+<footer>
+<div class="container-fluid left-reset">
+<div class="row">
+<div class="col-md-1 hidden-sm hidden-xs">
+<div class="logo-sector">
+	<div class="back-color">
+		<div class="img-area">
+			<a href="login.html">
+				<img class="logout1" src="img/logout.png" alt="">
+				<img class="logout2" src="img/logout-2.png" alt="">
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-md-11">
+<div class="foot-sector">
+	<span class="foot-text">© 2017 Fbposter.  All rights reserved</span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body>
+
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/easy-responsive-tabs.js"></script>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Insight</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+
+
+</head>
+<body>
+	<div id="fullcontent">
+		<header>
+			<div class="container-fluid left-reset">
+				<div class="row">
+					<div class="col-lg-1 hidden-sm hidden-xs" id="logo-acitve">
+						<div class="logo-sector">
+							<div class="back-color">
+								<div class="img-area">
+									<a href="">
+										<img src="img/combined-Shape.png" alt="" >
+									</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="toggle-menu-bar">
+					    	<img src="img/group-1.png" alt="" id="menu-bar-btn">
+							<span>Account</span>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="user-profil">
+								
+								<div class="col-lg-6 pull-right">
+									<div class="user">
+										<div class="profil-item pull-right">
+											<div class="profil-img pull-left">
+												<img class="img-circle " width="45px" height="45px" src="img/a.jpg">
+												<span></span>
+											</div>
+											<span class="hidden-xs" >Hello, Mark Velmiskin</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-6 col-md-6 reset-mar-pad pull-right head-btns">
+									<div class="date-wrapper pull-right">
+										<img src="img/menu/calendar.png" alt="">
+
+										<div class="dropdown">
+											<div class="dropdown-active"><span>Last 14 days result</span><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+											<div class="dropdown-list">
+												<ul>
+													<li class="dropdown-item">
+														Last 2 month result
+													</li>
+													<li class="dropdown-item">
+														Last  result
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		</header>
+
+		<div id="main_content">
+				<div class="col-md-1 left-reset">
+					<aside class="hidden-xs hidden-sm aside hidden-print nav-xs" id="nav-aside">
+                        <nav>
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="newpost.html" title="Add post">
+                                        <img src="img/menu-icons/plus.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="publishing.html" title="Publishing">
+                                        <img src="img/menu-icons/2.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item active-nav">
+                                    <a href="insights.html" title="Insights">
+                                        <img src="img/menu-icons/statisticks.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="accounts.html" title="Accounts">
+                                        <img src="img/menu-icons/users.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="settings.html" title="Settings">
+                                        <img src="img/menu-icons/settings.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+					<div id="side-nav">
+						
+						<a href="javascript:void(0)" class="close-btn" id="close-sidenav" onclick="closeNav()">&times;</a>
+
+						<nav class="nav-primary">
+							<ul class="nav">
+								<li  class="">
+									<a href="" class="auto font-bold">
+										<i class="material-icons">home</i>
+										<span>Fbposter</span>
+									</a>
+								</li>
+
+								<li  class="">
+									<a href="newpost.html" class="auto font-bold">
+										<i class="material-icons">add_circle_outline</i>
+										<!-- <img src="img/menu/plus.png"> -->
+										<span>Add post</span>
+									</a>
+								</li>
+
+								<li  class="">
+									<a href="publishing.html" class="auto font-bold">
+										<i class="material-icons">filter_none</i>
+										<span>Publishing</span>
+									</a>
+								</li>
+
+								<li  class="active">
+									<a href="insights.html" class="auto font-bold">
+										<i class="material-icons">timeline</i>
+										<span>Insights</span>
+									</a>
+								</li>
+
+								<li  class="">
+									<a href="accounts.html" class="auto font-bold">
+										<i class="material-icons">group</i>
+										<span>Accounts</span>
+									</a>
+								</li>
+
+								<li  class="">
+									<a href="settings.html" class="auto font-bold">
+										<i class="material-icons">trending_up</i>
+										<span>Settings</span>
+									</a>
+								</li>
+
+								<li  class="">
+									<a href="login.html" class="auto font-bold">
+										<i class="material-icons">power_settings_new</i>
+										<span>Logout</span>
+									</a>
+								</li>
+
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-md-11">
+					<div id="main_section">
+				<!-- ============================= Render   Body ===============================		 -->
+						<div class="container-fluid charts">
+					        <div class="row bg-white">
+					            <div class="col-md-6 col-sm-12 col-xs-12 rightBorder">
+					                <div class="row">
+					                    <h5 class="chartTitle">Publishing</h5>
+					                </div>
+					                <div class="row row-2">
+					                    <span class="fc-title green">Success 7</span>
+					                    <span class="fc-title bluee">Total Processed 3</span>
+					                    <span class="fc-title reD"> Fail 2</span>
+					                </div>
+					                <div class="row chart-1">
+					                    <!--CHART-1 BLOCK-->
+					                    <div class="chart-container" style="position: relative; height:50vh;">
+					                        <canvas id="myChart_1"></canvas>
+					                    </div>
+
+					                    <script type="text/javascript">
+					                        let myChart_1 = document.getElementById('myChart_1').getContext('2d');
+					                        let massPopChart = new Chart(myChart_1, {
+					                            type: 'bar',
+					                            data: {
+					                                labels: ['Jan', 'Fev', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+					                                datasets: [{
+					                                    label: '',
+					                                    data: [1700, 900, 700, 1600, 1300, 600, 1650, 900, 750, 1600, 1300, 900, 200],
+					                                    backgroundColor: ['#9BEAC3', '#5E8FCC', '#5E8FCC', '#5E8FCC', '#9BEAC3', '#ED7271', '#9BEAC3', '#9BEAC3', '#9BEAC3', '#9BEAC3', '#9BEAC3', '#ED7271' ]
+					                                }]
+					                            },
+					                            options: {
+					                                maintainAspectRatio: false,
+					                                scales: {
+					                                    yAxes: [{
+					                                        stacked: true,
+
+					                                    }],
+					                                    xAxes: [{
+					                                        gridLines: {
+					                                            display: false
+					                                        }
+					                                    }]
+					                                },
+					                                legend: {
+					                                    display: false
+					                                },
+					                                layout: {
+					                                    padding: {
+					                                        left: 10,
+					                                        right: 30,
+					                                        bottom: 20,
+					                                        top: 0
+					                                    }
+					                                },
+					                                tooltips: {
+					                                    enabled: false
+					                                }
+					                            }
+					                        });
+					                    </script>
+					                </div>
+					            </div>
+					            <div class="col-md-6 col-sm-12 col-xs-12">
+					                <div class="row">
+					                    <div class="chart-2Section">
+					                        <nav>
+					                            <div class="nav-item nav-active">My facebook accounts</div>
+					                            <div class="nav-item">My data results</div>
+					                        </nav>
+					                    </div>
+					                </div>
+					                <div class="row fake-row"></div>
+					                <div class="row row-pie">
+					                   <div class="chartt">
+					                    <div class="col-md-4 col-sm-5 col-xs-6 marTop">
+					                        <div class="row pad-20"><span class="fc-title green">Total groups 6</span></div>
+					                        <div class="row pad-20"><span class="fc-title bluee">Total fb account 3</span></div>
+					                        <div class="row pad-20"><span class="fc-title grey">Total pages 2</span></div>
+
+
+
+					                    </div>
+					                    <div class="col-md-8 col-sm-7 col-xs-6 chart-1">
+					                        <!--CHART-2 BLOCK-->
+					                        <div class="chart-container pie-chart">
+					                            <canvas id="myChart"></canvas>
+					                        </div>
+					                        <script type="text/javascript">
+					                            Chart.defaults.doughnutLabels = Chart.helpers.clone(Chart.defaults.doughnut);
+
+					                            var helpers = Chart.helpers;
+					                            var defaults = Chart.defaults;
+
+					                            Chart.controllers.doughnutLabels = Chart.controllers.doughnut.extend({
+					                                updateElement: function(arc, index, reset) {
+					                                    var _this = this;
+					                                    var chart = _this.chart,
+					                                        chartArea = chart.chartArea,
+					                                        opts = chart.options,
+					                                        animationOpts = opts.animation,
+					                                        arcOpts = opts.elements.arc,
+					                                        centerX = (chartArea.left + chartArea.right) / 2,
+					                                        centerY = (chartArea.top + chartArea.bottom) / 2,
+					                                        startAngle = opts.rotation, // non reset case handled later
+					                                        endAngle = opts.rotation, // non reset case handled later
+					                                        dataset = _this.getDataset(),
+					                                        circumference = reset && animationOpts.animateRotate ? 0 : arc.hidden ? 0 : _this.calculateCircumference(dataset.data[index]) * (opts.circumference / (2.0 * Math.PI)),
+					                                        innerRadius = reset && animationOpts.animateScale ? 0 : _this.innerRadius,
+					                                        outerRadius = reset && animationOpts.animateScale ? 0 : _this.outerRadius,
+					                                        custom = arc.custom || {},
+					                                        valueAtIndexOrDefault = helpers.getValueAtIndexOrDefault;
+
+					                                    helpers.extend(arc, {
+					                                        // Utility
+					                                        _datasetIndex: _this.index,
+					                                        _index: index,
+
+					                                        // Desired view properties
+					                                        _model: {
+					                                            x: centerX + chart.offsetX,
+					                                            y: centerY + chart.offsetY,
+					                                            startAngle: startAngle,
+					                                            endAngle: endAngle,
+					                                            circumference: circumference,
+					                                            outerRadius: outerRadius,
+					                                            innerRadius: innerRadius,
+					                                            label: valueAtIndexOrDefault(dataset.label, index, chart.data.labels[index])
+					                                        },
+
+					                                        draw: function() {
+					                                            var ctx = this._chart.ctx,
+					                                                vm = this._view,
+					                                                sA = vm.startAngle,
+					                                                eA = vm.endAngle,
+					                                                opts = this._chart.config.options;
+
+					                                            var labelPos = this.tooltipPosition();
+					                                            var segmentLabel = vm.circumference / opts.circumference * 100;
+
+					                                            ctx.beginPath();
+
+					                                            ctx.arc(vm.x, vm.y, vm.outerRadius, sA, eA);
+					                                            ctx.arc(vm.x, vm.y, vm.innerRadius, eA, sA, true);
+
+					                                            ctx.closePath();
+					                                            ctx.strokeStyle = vm.borderColor;
+					                                            ctx.lineWidth = vm.borderWidth;
+
+					                                            ctx.fillStyle = vm.backgroundColor;
+
+					                                            ctx.fill();
+					                                            ctx.lineJoin = 'bevel';
+
+					                                            if (vm.borderWidth) {
+					                                                ctx.stroke();
+					                                            }
+
+					                                            if (vm.circumference > 0.15) { 
+					                                                ctx.beginPath();
+					                                                ctx.font = helpers.fontString(opts.defaultFontSize, opts.defaultFontStyle, opts.defaultFontFamily);
+					                                                ctx.fillStyle = "#fff";
+					                                                ctx.textBaseline = "top";
+					                                                ctx.textAlign = "center";
+					                                                ctx.fontStyle="bold";
+
+					                                                // Round percentage in a way that it always adds up to 100%
+					                                                ctx.fillText(segmentLabel.toFixed(0) + "%", labelPos.x, labelPos.y);
+					                                            }
+					                                        }
+					                                    });
+
+					                                    var model = arc._model;
+					                                    model.backgroundColor = custom.backgroundColor ? custom.backgroundColor : valueAtIndexOrDefault(dataset.backgroundColor, index, arcOpts.backgroundColor);
+					                                    model.hoverBackgroundColor = custom.hoverBackgroundColor ? custom.hoverBackgroundColor : valueAtIndexOrDefault(dataset.hoverBackgroundColor, index, arcOpts.hoverBackgroundColor);
+					                                    model.borderWidth = custom.borderWidth ? custom.borderWidth : valueAtIndexOrDefault(dataset.borderWidth, index, arcOpts.borderWidth);
+					                                    model.borderColor = custom.borderColor ? custom.borderColor : valueAtIndexOrDefault(dataset.borderColor, index, arcOpts.borderColor);
+
+					                                    // Set correct angles if not resetting
+					                                    if (!reset || !animationOpts.animateRotate) {
+					                                        if (index === 0) {
+					                                            model.startAngle = opts.rotation;
+					                                        } else {
+					                                            model.startAngle = _this.getMeta().data[index - 1]._model.endAngle;
+					                                        }
+
+					                                        model.endAngle = model.startAngle + model.circumference;
+					                                    }
+
+					                                    arc.pivot();
+					                                }
+					                            });
+
+					                            var config = {
+					                                type: 'doughnutLabels',
+					                                data: {
+					                                    datasets: [{
+					                                        data: [
+					                                            50,
+					                                            20,
+					                                            25
+					                                        ],
+					                                        backgroundColor: ['#4C83C7', '#D6DEE3', '#76DDFB'],
+					                                        label: 'Dataset 1'
+					                                    }],
+					                                    labels: [
+					                                        "Red",
+					                                        "Green",
+					                                        "Yellow"
+					                                    ]
+					                                },
+					                                options: {
+					                                    elements: {
+					                                        arc: {
+					                                            borderWidth: 0
+					                                        }
+					                                    },
+					                                    responsive: true,
+					                                    legend: {
+					                                        display: false
+					                                    },
+					                                    title: {
+					                                        display: false,
+					                                        text: 'Chart.js Doughnut Chart'
+					                                    },
+					                                    animation: {
+					                                        animateScale: true,
+					                                        animateRotate: true
+					                                    },
+					                                    tooltips: {
+					                                        enabled: false
+					                                    }
+					                                }
+					                            };
+
+					                            var ctx = document.getElementById("myChart").getContext("2d");
+					                            new Chart(ctx, config);
+					                        </script>
+
+					                    </div>
+					                    </div>
+					                </div>
+					            </div>
+					        </div>
+					        <div class="row row-3">
+					            <h5 class="myAccountlabel">My account</h5>
+					        </div>
+					        <div class="row bg-white">
+					            <div class="col-md-6 col-sm-6 col-xs-12 no-padding">
+					                <ul class="list-group">
+					                    <li class="list-group-item">
+					                        <span class="badge blue">Primary</span> Posts per day:
+					                    </li>
+					                    <li class="list-group-item">
+					                        <span class="badge blue">Admin</span>Facebook accounts:
+					                    </li>
+					                    <li class="list-group-item">
+					                        <span class="badge blue">Badge</span>Package:
+					                    </li>
+					                </ul>
+					            </div>
+					            <div class="col-md-6 col-sm-6 col-xs-12 no-padding">
+					                <ul class="list-group">
+					                    <li class="list-group-item">
+					                        <span class="badge orange">Primary</span> Upload Images:
+					                    </li>
+					                    <li class="list-group-item">
+					                        <span class="badge orange">Admin</span>Upload Videos:
+					                    </li>
+					                    <li class="list-group-item">
+					                        <span class="badge orange">Badge</span>Upload Usage:
+					                    </li>
+					                </ul>
+					            </div>
+					        </div>
+					    </div>
+						
+
+				<!-- ======================== END Render   Body  END===============================		 -->
+
+					</div>
+				</div>
+		</div>
+
+		<footer>
+			<div class="container-fluid left-reset">
+				<div class="row">
+					<div class="col-md-1 hidden-sm hidden-xs">
+						<div class="logo-sector">
+							<div class="back-color">
+								<div class="img-area">
+									<a href="">
+										<img class="logout1" src="img/logout.png" alt="">
+										<img class="logout2" src="img/logout-2.png" alt="">
+									</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-11">
+						<div class="foot-sector">
+							<span class="foot-text">© 2017 Fbposter.  All rights reserved</span>
+						</div>
+					</div>
+
+				</div>
+			</div>		
+		</footer>
+	</div>
+
+
+
+
+
+	  <!-- Modal -->
+        <div class="modal fade col-sm-12" id="myModal-1" role="dialog">
+            <div class="modal-dialog modal-md addAccount">
+                <div class="modal-content">
+                    <div class="modal-header modalHeader">
+                        <h6 class="modal-title">ADD <br> ACCOUNT</h6>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <div class="col-md-6 col-sm-12"><label class="labelText" for="email">E-mail:</label>
+                                    <input type="text" class="form-control modalInputs" id="email"></div>
+                                <div class="col-md-6 col-sm-12"><label class="labelText" for="usr">Choose the user role:</label>
+                                    <select class="form-control modalInputs" id="usr">
+                            <option></option>
+                            <option></option>
+                          </select></div>
+
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-6 col-sm-12">
+                                    <label class="labelText" for="date">Date:</label>
+                                    <input type="text" class="form-control modalInputs dateInput" id="date" aria-describedby="sizing-addon1">
+                                    <div class="calendar"><img src="img/calendar.png"></div>
+                                </div>
+                                <div class="col-md-6 col-sm-12"><label class="labelText" for="psw">Re-enter password:</label>
+                                    <input type="password" class="form-control modalInputs" id="psw"></div>
+
+                            </div>
+                        </form>
+
+                        <button type="button" class="btn btn-default btn-block addAccountBtn">add account</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script src="js/easy-responsive-tabs.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>

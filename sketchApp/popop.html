@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page-1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/popup/popop.css">
+    <!-- <link rel="stylesheet" href="css/popup/popop_1.css"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Modal</button>
+        <!-- Modal -->
+        <div class="modal fade col-sm-12" id="myModal" role="dialog">
+            <div class="modal-dialog modal-md addAccount">
+                <div class="modal-content">
+                    <div class="modal-header modalHeader">
+                        <h6 class="modal-title">ADD <br> ACCOUNT</h6>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <div class="col-md-6 col-sm-12"><label class="labelText" for="email">E-mail:</label>
+                                    <input type="text" class="form-control modalInputs" id="email"></div>
+                                <div class="col-md-6 col-sm-12"><label class="labelText" for="usr">Choose the user role:</label>
+                                    <select class="form-control modalInputs" id="usr">
+                            <option></option>
+                            <option></option>
+                          </select></div>
+
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-6 col-sm-12">
+                                    <label class="labelText" for="date">Date:</label>
+                                    <input type="text" class="form-control modalInputs dateInput" id="date" aria-describedby="sizing-addon1">
+                                    <div class="calendar"><img src="img/calendar.png"></div>
+                                </div>
+                                <div class="col-md-6 col-sm-12"><label class="labelText" for="psw">Re-enter password:</label>
+                                    <input type="password" class="form-control modalInputs" id="psw"></div>
+
+                            </div>
+                        </form>
+
+                        <button type="button" class="btn btn-default btn-block addAccountBtn">add account</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

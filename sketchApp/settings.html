@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Settings</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="css/vendor.css">
+		<link rel="stylesheet" type="text/css" href="css/popup/popop.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/jquery-3.2.1.js"></script>
+	</head>
+	<body>
+		<div id="fullcontent">
+			<header>
+				<div class="container-fluid left-reset">
+					<div class="row">
+						<div class="col-md-1 hidden-sm hidden-xs" id="logo-acitve">
+							<div class="logo-sector">
+								<div class="back-color">
+									<div class="img-area">
+										<a href="">
+											<img src="img/combined-Shape.png" alt="" >
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="toggle-menu-bar">
+								<img src="img/group-1.png" alt="" id="menu-bar-btn">
+								<span>Settings</span>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="user-profil">
+								
+								<div class="col-md-12">
+									<div class="user">
+										<div class="profil-item pull-right">
+											<div class="profil-img pull-left">
+												<img class="img-circle" width="45px" height="45px" src="img/a.jpg">
+												<span></span>
+											</div>
+											<span class="hidden-xs" >Hello, Mark Velmiskin</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</header>
+			<div id="main_content">
+				<div class="col-md-1 left-reset">
+					<aside class="hidden-xs hidden-sm aside hidden-print nav-xs" id="nav-aside">
+                        <nav>
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="newpost.html" title="Add post">
+                                        <img src="img/menu-icons/plus.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item" title="Publishing">
+                                    <a href="publishing.html">
+                                        <img src="img/menu-icons/2.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="insights.html" title="Insights">
+                                        <img src="img/menu-icons/statisticks.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="accounts.html" title="Accounts">
+                                        <img src="img/menu-icons/users.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item active-nav">
+                                    <a href="settings.html" title="Settings">
+                                        <img src="img/menu-icons/settings.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+					<div id="side-nav">
+						
+						<a href="javascript:void(0)" class="close-btn" id="close-sidenav">&times;</a>
+						<nav class="nav-primary">
+							<ul class="nav">
+								<li >
+									<a href="" class="auto font-bold">
+										<i class="material-icons">home</i>
+										<span>Fbposter</span>
+									</a>
+								</li>
+								<li >
+									<a href="newpost.html" class="auto font-bold">
+										<i class="material-icons">add_circle_outline</i>
+										<span>Add post</span>
+									</a>
+								</li>
+								<li  >
+									<a href="publishing.html" class="auto font-bold">
+										<i class="material-icons">filter_none</i>
+										<span>Publishing</span>
+									</a>
+								</li>
+								<li  >
+									<a href="insights.html" class="auto font-bold">
+										<i class="material-icons">timeline</i>
+										<span>Insights</span>
+									</a>
+								</li>
+								<li  >
+									<a href="accounts.html" class="auto font-bold">
+										<i class="material-icons">group</i>
+										<span>Accounts</span>
+									</a>
+								</li>
+								<li  class="active">
+									<a href="settings.html" class="auto font-bold">
+										<i class="material-icons">trending_up</i>
+										<span>Settings</span>
+									</a>
+								</li>
+								<li >
+									<a href="login.html" class="auto font-bold">
+										<i class="material-icons">power_settings_new</i>
+										<span>Logout</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="content-holder">
+					<div class="tab-white">
+						
+						<div >
+							<div id="main_section">
+						<!-- ============================= Render   Body ===============================	
+							 -->
+						<div id="horizontalTab">
+							<ul class="resp-tabs-list">
+								<li>my Profile</li>
+								<li>General settings</li>
+								<li>Publish settings</li>
+								<li>Facebook accounts</li>
+								<li>Facebook Apps</li>
+								<li>App settings</li>
+								<li>Roles</li>
+							</ul>
+							
+							<div class="resp-tabs-container">
+								<div>
+									
+									<!-- section 1  -->
+									
+									<section id="my_profile">
+										<div class="container margin-normalizer">
+											<div class="row">
+												<form action="">
+													<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reset-mar-pad flex flex-wrap-reverse">
+														<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 left first_position">
+															<div class="form-element">
+																<label for="">Username(Username can not be change):</label>
+																<div class="input-wrapper">
+																	<input class="admin"  placeholder="Admin" type="text">
+																</div>
+															</div>
+															<div class="form-element">
+																<label for="">First name:</label>
+																<div class="input-wrapper">
+																	<input type="text">
+																</div>
+															</div>
+															<div class="form-element">
+																<label for="">E-mail</label>
+																<div class="input-wrapper">
+																	<input type="text">
+																</div>
+															</div>
+															<button class="button-save"> Save changes</button>
+														</div>
+														<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 right first_position">
+															<div class="form-element">
+																<label for="">Do you want to change password?</label>
+																<div class="input-wrapper">
+																	<input type="password" class="password">
+																	<button class="change_btn">change password
+																	</button>
+																</div>
+															</div>
+															<div class="form-element">
+																<label for="">Last name:</label>
+																<div class="input-wrapper">
+																	<input type="text">
+																</div>
+															</div>
+															<div class="form-element">
+																<label for="">Facebook user id:</label>
+																<div class="input-wrapper">
+																	<input type="text">
+																</div>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</section>
+									<!-- end section 1 -->
+								</div>
+								
+								<div>
+									<!-- ===============  Section 2  ======================	 -->
+									<section id="general_setings">
+										<div class="container margin-normalizer">
+											<div class="row">
+												<div class="col-lg-12 gen">
+													<label for="">Records per page</label>
+													<input type="text">
+													<label for="">Timezone | Current <Time:>02/10/2018 19:10</Time:></label>
+													<select class="select" name="carlist" form="carform">
+														<option value="UTC">UTC</option>
+														<option value="CCC">CCC</option>
+													</select>
+													<label for="">Language</label>
+													<select class="select" name="carlist" form="carform">
+														<option value="English">English</option>
+														<option value="Spain">Spain</option>
+													</select>
+													<div class="button-div">
+														<button class="button-save"> Save changes</button>
+													</div>	
+													
+												</div>
+											</div>
+										</div>
+									</section>
+									<!-- =============== end  Section 2  ======================	 -->
+								</div>
+								
+								<div>
+									<!-- ====================	section 3 ============= -->
+									
+									<section id="general_setings">
+										<div class="container margin-normalizer">
+											<div class="row">
+												<div class="col-lg-12 gen">
+													<label for="">Records per page</label>
+													<input type="text">
+													<label for="">Timezone | Current <Time:>02/10/2018 19:10</Time:></label>
+													<select class="select" name="carlist" form="carform">
+														<option value="UTC">UTC</option>
+														<option value="CCC">CCC</option>
+													</select>
+													<label for="">Language</label>
+													<select class="select" name="carlist" form="carform">
+														<option value="English">English</option>
+														<option value="Spain">Spain</option>
+													</select>
+													<div class="button-div">
+														<button class="button-save"> Save changes</button>
+													</div>	
+													
+												</div>
+											</div>
+										</div>
+									</section>
+									<!-- ======================= end section 3 ================ -->
+								</div>
+								<div>
+									<!--  ===============section 4===============  -->
+									<section id="facebook_login">
+										<div class="container-fluid">
+											<div class="row">
+												
+												<div class="col-md-12 mar-top-20">
+													<div class="radio_button">
+														<div class="group checkbox-holder">
+															<input type="checkbox" id="cbtest" />
+															<label for="cbtest" class="check-box"></label>
+															<label class="text-label-txt" for="">Load my groups</label>
+														</div>
+														<div class="sec checkbox-holder">
+															<input type="checkbox" id="cbtest1" />
+															<label for="cbtest1" class="check-box"></label>
+															<label class="text-label-txt" for="">Load my pages</label>
+														</div>
+														<div class="own checkbox-holder">
+															<input type="checkbox" id="cbtest2" />
+															<label for="cbtest2" class="check-box"></label>
+															<label class="text-label-txt" for="">Load my ownpages</label>
+														</div>
+													</div>
+													<div class="import">
+														<label for="">Maximum groups to import</label>
+														<input type="number">
+														<label for="">Maximum groups to import</label>
+														<input type="number">
+														<div class="button-div">
+															
+															<button class="button-save">Save changes</button>
+														</div>
+													</div>
+													<div class="row">
+														<div class="line"></div>
+														<div class="col-md-12">
+															<div class="plus">
+																<button type="button" class="btn btn-info button-normalizer">
+																<i class="fa fa-plus" aria-hidden="true"></i>
+																</button>
+															</div>
+														</div>
+													</div>
+													<div class="user_data">
+														<div class="table-holder">
+															<table class="table table-bordered">
+																<thead>
+																	<tr class="first">
+																		<th class="head_line">Full name</th>
+																		<th class="head_line">ID</th>
+																		<th class="head_line">e-mail</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td>Mark Velmiskin</td>
+																		<td>11164365271</td>
+																		<td>marklinks777@gmail.com</td>
+																	</tr>
+																	<tr>
+																		<td>Sabina Mammadova</td>
+																		<td>47382994523</td>
+																		<td>sabina@gmail.com</td>
+																	</tr>
+																	
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+									<!-- end section 4 -->
+								</div>
+								<div>
+									<!-- ==========  section 5 ========== -->
+									
+									<div class="container fbApps addAccount">
+										<div class="row borderBottom">
+											<div class="col-md-8 col-sm-12 col-xs-12 reset-mar-pad">
+											<form>
+												<div class="form-group row">
+													<div class="col-md-6 col-sm-6 col-xs-12"><label class="labelText mar-bot-10" for="inpt-1">Facebook app ID:</label>
+													<input type="text" class="form-control modalInputs" id="inpt-1">
+														</div>
+														<div class="col-md-6 col-sm-6 col-xs-12"><label class="labelText mar-bot-10" for="inpt-2">Facebook app Secret:</label>
+														<input type="text" class="form-control modalInputs" id="inpt-2">
+													</div>
+												</div>
+												<div class="form-group row pad-top-20">
+													<div class="col-md-6 col-sm-6 col-xs-12"><label class="labelText mar-bot-10" for="inpt-1">Facebook app authenticate link:</label>
+													<input type="text" class="form-control modalInputs" id="inpt-1">
+													</div>
+													<div class="checkApp col-md-6 col-sm-6 col-xs-12">
+														<input type="checkbox" id="cbtest10" />
+														<label for="cbtest10" class="check-box"></label>
+														<label class="" for="" style="margin-left: 10px">Make this app public</label>
+													</div>
+												</div>
+											</form>
+									<div class="row">
+										<button type="button" class="btn btn-default btn-block addAccountBtn fbAdd mar-left-30 button-normalizer">ADD</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5 hidden-sm"></div>
+							
+							<div class="m-100">
+								<div class="table-holder">
+									<table class="table-1 main-style table table-bordered">
+										<thead class="grey white">
+											<tr>
+												<th>App name</th>
+												<th>Expires on</th>
+												<th>
+													
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Facebook for iPhone</td>
+												<td>---------</td>
+												<td class="w-200">
+													<button type="button" class="btn btn-danger btn-md redBtn btn-table">Delete</button>
+												<button type="button" class="btn btn-primary btn-md btn-table">Authenticate</button></td>
+											</tr>
+											<tr>
+												<td>Facebook for Android</td>
+												<td>---------</td>
+												<td class="w-200"><button type="button" class="btn btn-danger btn-md redBtn btn-table">Delete</button>
+												<button type="button" class="btn btn-primary btn-md btn-table">Authenticate</button></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						
+						<!-- ===========   end section 5 ========= -->
+					</div>
+					
+					<div>
+						<!--  ===============  section 6    ===============  -->
+						<div id="acardion">
+							<div >
+								<div >
+									<div >
+										
+										<section>
+											<div class="accordion-container">
+												
+												<div class="set">
+													<a >
+														App name
+														<i class="fa fa-chevron-down" aria-hidden="true"></i>
+														
+													</a>
+													<div class="content con_1">
+														<form action="">
+															<div class="form-group row">
+																<div class="col-md-8">
+																	<label for="siteName" class="general-style">
+																		Site name
+																	</label>
+																	<input type="text">
+																	<div class="dot">
+																		<input type="checkbox" id="cbtest7" />
+																		<label for="cbtest7" class="check-box"></label>
+																		<p>New user can register</p>
+																	</div>
+																	<div class="dot">
+																		<input type="checkbox" id="cbtest8" />
+																		<label for="cbtest8" class="check-box"></label>
+																		<p>New user must confirm their email address</p>
+																	</div>
+																	<div class="dot">
+																		<input type="checkbox" id="cbtest9" />
+																		<label for="cbtest9" class="check-box"></label>
+																		<p>New users accounts must be activated by an admin</p>
+																	</div>
+																</div>
+																<div class="col-md-5">
+																	<label for="" class="general-style">New users Default role:</label>
+																<select class="select" name="" id=""></select>
+																<label for="arrow"></label>
+															</div>
+															<div class="col-md-5">
+																<label for="" class="general-style">New users Default timezone</label>
+															<select class="select" name="" id=""></select>
+															<label for="arrow"></label>
+														</div>
+														<div class="col-md-5">
+															<label for="" class="general-style">Default language</label>
+														<select class="select" name="" id=""></select>
+														<label for="arrow"></label>
+													</div>
+													<div class="col-md-5">
+														<label for="" class="general-style">Date format</label>
+													<select class="select" name="" id=""></select>
+													<label for="arrow"></label>
+												</div>
+												<div class="col-xs-12">
+													<button class="button" type="submit">save</button>
+												</div>
+												
+											</div>
+										</form>
+										
+										
+									</div>
+								</div>
+								<div class="set">
+									<a >
+										Publish settings
+										<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										
+									</a>
+									<div class="content">
+										<p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse aliquam erat hendrerit vehicula vestibulum.</p>
+									</div>
+								</div>
+								<div class="set">
+									<a >
+										Theme settings
+										<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										
+									</a>
+									<div class="content">
+										<p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+									</div>
+								</div>
+								<div class="set">
+									<a >
+										Social login
+										<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										
+									</a>
+									<div class="content">
+										<p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. </p>
+									</div>
+								</div>
+								<div class="set">
+									<a >
+										Advanced settings
+										<i class="fa fa-chevron-down" aria-hidden="true"></i>
+										
+									</a>
+									<div class="content">
+										<p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio pretium scelerisque. </p>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  =============== end section 6 ===============  -->
+		
+	</div>
+	<!--  =============== section 7 ===============  -->
+	<div>
+		<section id="general_setings">
+			<div class="container margin-normalizer">
+				<div class="row">
+					<div class="col-lg-12 gen">
+						<label for="">Records per page</label>
+						<input type="text">
+						<label for="">Timezone | Current <Time:>02/10/2018 19:10</Time:></label>
+						<select class="select" name="carlist" form="carform">
+							<option value="UTC">UTC</option>
+							<option value="CCC">CCC</option>
+						</select>
+						<label for="">Language</label>
+						<select class="select" name="carlist" form="carform">
+							<option value="English">English</option>
+							<option value="Spain">Spain</option>
+						</select>
+						<div class="button-div">
+							<button class="button-save"> Save changes</button>
+						</div>	
+						
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+</div>
+<!--  ============================= end section 7 =============== ============= -->
+<!-- ======================== END Render   Body  END===============================		 -->
+							</div>
+						</div>
+					</div>
+				</div>
+</div>
+<footer>
+<div class="container-fluid left-reset">
+<div class="row">
+<div class="col-md-1 hidden-sm hidden-xs">
+<div class="logo-sector">
+	<div class="back-color">
+		<div class="img-area">
+			<a href="login.html">
+				<img class="logout1" src="img/logout.png" alt="">
+				<img class="logout2" src="img/logout-2.png" alt="">
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+<div class="col-md-11">
+<div class="foot-sector">
+	<span class="foot-text">© 2017 Fbposter.  All rights reserved</span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body>
+<!-- <script>
+$(document).ready(function () {
+	$('#horizontalTab').easyResponsiveTabs({
+		type: 'default', //Types: default, vertical, accordion
+		width: 'auto', //auto or any width like 600px
+		fit: true,   // 100% fit in a container
+	closed: 'accordion', // Start closed if in accordion view
+	activate: function(event) { // Callback function if tab is switched
+		var $tab = $(this);
+		var $info = $('#tabInfo');
+		var $name = $('span', $info);
+		$name.text($tab.text());
+		$info.show();
+		}
+	});
+});
+</script> -->
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/easy-responsive-tabs.js"></script>
+</html>

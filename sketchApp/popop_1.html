@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page-2</title>
+
+    <!-- <link rel="stylesheet" href="css/popup/popop_1.css"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/popup/popop.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Modal</button>
+
+        <!-- Modal -->
+        <div class="modal fade col-sm-12" id="myModal" role="dialog">
+            <div class="modal-dialog modal-md addAccount">
+                <div class="modal-content">
+                    <div class="modal-header modalHeader">
+                        <h6 class="modal-title">ADD/UPDATE FACEBOOK<br> ACCOUNT</h6>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+
+
+
+                        <div class="modal_menu">
+                            <nav>
+                                <div class="nav-item nav-active">FACEBOOK</div>
+                                <div class="nav-item">htc</div>
+                            </nav>
+                        </div>
+
+
+
+                        <form>
+                            <div class="form-group row ptop-20">
+                                <div class="col-md-6"><label class="labelText" for="user">Username:</label>
+                                    <input type="text" class="form-control modalInputs" id="user"></div>
+
+                                <div class="col-md-6"><label class="labelText" for="psw">Password:</label>
+                                    <input type="text" class="form-control modalInputs" id="psw"></div>
+
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-default btn-block generateBtn">GENERATE TOKEN</button>
+                        <div class="warningBlock">
+                            <p class="danger-text text-danger">Your Facebook account password will NOT be stored we only use the password to generate a facebook token:</p>
+                        </div>
+
+                        <form>
+                            <div class="form-group row">
+                                <div class="col-md-12"><label class="labelText" for="acc">Access token Here:</label>
+                                    <input type="text" class="form-control largeInput" id="acc"></div>
+                            </div>
+                        </form>
+
+
+                        <button type="button" class="btn btn-default btn-block addAccountColor">ADD FACEBOOK ACCOUNT</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
