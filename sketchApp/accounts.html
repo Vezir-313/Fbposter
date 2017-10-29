@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+    <div id="fullcontent">
+        <header>
+            <div class="container-fluid left-reset">
+                <div class="row">
+                    <div class="col-lg-1 hidden-sm hidden-xs" id="logo-acitve">
+                        <div class="logo-sector">
+                            <div class="back-color">
+                                <div class="img-area">
+                                    <a href="">
+										<img src="img/combined-Shape.png" alt="" >
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="toggle-menu-bar">
+                            <img src="img/group-1.png" alt="" id="menu-bar-btn">
+                            <span>Account</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="user-profil">
+                            <div class="col-lg-6 pull-right">
+                                <div class="user">
+                                    <div class="profil-item pull-right">
+                                        <div class="profil-img pull-left">
+                                            <img class="img-circle " width="45px" height="45px" src="img/a.jpg">
+                                            <span></span>
+                                        </div>
+                                        <span class="hidden-xs">Hello, Mark Velmiskin</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 reset-mar-pad pull-right head-btns">
+                                <div class="confirm-but">
+                                    <button class="export-email btn" id="export_email">Export E-mails</button>
+                                    <button class="delete-user-gray btn" id="delete-user-btn-gray">Delete user</button>
+                                    <button class="cancel btn" id="cancel-delete">Cansel</button>
+                                    <button class="delete-user-red btn" id="delete-user-btn-red">Delete user</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main_content">
+            <aside class="hidden-xs hidden-sm aside hidden-print nav-xs" id="nav-aside">
+                        <nav>
+                            <ul>
+                                <li class="nav-item">
+                                    <a href="newpost.html" title="Add post">
+                                        <img src="img/menu-icons/plus.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item" title="Publishing">
+                                    <a href="publishing.html">
+                                        <img src="img/menu-icons/2.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="insights.html" title="Insights">
+                                        <img src="img/menu-icons/statisticks.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item active-nav">
+                                    <a href="accounts.html" title="Accounts">
+                                        <img src="img/menu-icons/users.svg">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="settings.html" title="Settings">
+                                        <img src="img/menu-icons/settings.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+            <div id="side-nav">
+                <a href="javascript:void(0)" class="close-btn" id="close-sidenav" onclick="closeNav()">&times;</a>
+                <nav class="nav-primary">
+                    <ul class="nav">
+                        <li class="">
+                            <a href="" class="auto font-bold">
+										<i class="material-icons">home</i>
+										<span>Fbposter</span>
+									</a>
+                        </li>
+                        <li class="">
+                            <a href="Newpost.html" class="auto font-bold">
+										<i class="material-icons">add_circle_outline</i>
+										<!-- <img src="img/menu/plus.png"> -->
+										<span>Add post</span>
+									</a>
+                        </li>
+                        <li class="">
+                            <a href="Publishing.html" class="auto font-bold">
+										<i class="material-icons">filter_none</i>
+										<span>Publishing</span>
+									</a>
+                        </li>
+                        <li class="">
+                            <a href="Insights.html" class="auto font-bold">
+										<i class="material-icons">timeline</i>
+										<span>Insights</span>
+									</a>
+                        </li>
+                        <li class="active">
+                            <a href="Accounts.html" class="auto font-bold">
+										<i class="material-icons">group</i>
+										<span>Accounts</span>
+									</a>
+                        </li>
+                        <li class="">
+                            <a href="Settings.html" class="auto font-bold">
+										<i class="material-icons">trending_up</i>
+										<span>Settings</span>
+									</a>
+                        </li>
+                        <li class="">
+                            <a href="login.html" class="auto font-bold">
+										<i class="material-icons">power_settings_new</i>
+										<span>Logout</span>
+									</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content-holder">
+				<div class="tab-white">
+                    <div id="main_section">
+                        <!-- ============================= Render   Body ===============================		 -->
+                        <section id="account">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="account">
+                                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+                                            <div class="log_in" id="log_in">
+                                                <label for="" class="user">Username:</label>
+                                                <input type="text" class="form-control">
+                                                <label for="">Password:</label>
+                                                <input type="text" class="form-control">
+                                                <button class="btn btn-default btn-block add-acc-btn" data-toggle="modal" data-target="#myModal-1">add account</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+                                            <div class="con check-user">
+                                                <div style="background-image: url(img/a.jpg)" class=" y_b profil_photo online-user">
+                                                </div>
+                                                <div class="head-text">
+                                                    <h5>Mark Velmiskin</h5>
+                                                </div>
+                                                <div class="date-text">
+                                                    <p>20 September 2017</p>
+                                                </div>
+                                                <div class="select">
+                                                    <input type="checkbox" id="cbtest1" />
+                                                    <label for="cbtest1" class="check-box"></label>
+                                                </div>
+                                                <div class="email-text">
+                                                    <p class="mail">marklinks050@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+                                            <div class="con check-user">
+                                                <div class="profil_photo b_b" style="background-image:url(img/b.jpg)">
+                                                </div>
+                                                <div class="head-text">
+                                                    <h5>ULYA-AXUNDZADEH</h5>
+                                                </div>
+                                                <div class="date-text">
+                                                    <p>22 August 2017</p>
+                                                </div>
+                                                <div class="select">
+                                                    <input type="checkbox" id="cbtest2" />
+                                                    <label for="cbtest2" class="check-box"></label>
+                                                </div>
+                                                <div class="email-text">
+                                                    <p class="mail">yulya.Akhundzadeh@gmail .com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+                                            <div class="con check-user">
+                                                <div class="profil_photo m_b" style="background-image:url(img/d.jpg)">
+                                                </div>
+                                                <div class="head-text">
+                                                    <h5>valida frost</h5>
+                                                </div>
+                                                <div class="date-text">
+                                                    <p>18 June 2017</p>
+                                                </div>
+                                                <div class="select">
+                                                    <input type="checkbox" id="cbtest3" />
+                                                    <label for="cbtest3" class="check-box"></label>
+                                                </div>
+                                                <div class="email-text">
+                                                    <p class="mail">valida@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+                                            <div class="con check-user">
+                                                <div class="profil_photo r_b" style="background-image:url(img/c.jpg)">
+                                                </div>
+                                                <div class="head-text">
+                                                    <h5>Toghrul Calalli</h5>
+                                                </div>
+                                                <div class="date-text">
+                                                    <p>14 Jule 2017</p>
+                                                </div>
+                                                <div class="select">
+                                                    <input type="checkbox" id="cbtest4" />
+                                                    <label for="cbtest4" class="check-box"></label>
+                                                </div>
+                                                <div class="email-text">
+                                                    <p class="mail">toghrul@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+                                            <div class="con check-user">
+                                                <div class="profil_photo s_b" style="background-image:url(img/l.jpg)">
+                                                </div>
+                                                <div class="head-text">
+                                                    <h5>SABINA MAMMADOVA</h5>
+                                                </div>
+                                                <div class="date-text">
+                                                    <p>05 June 2017</p>
+                                                </div>
+                                                <div class="select">
+                                                    <input type="checkbox" id="cbtest5" />
+                                                    <label for="cbtest5" class="check-box"></label>
+                                                </div>
+                                                <div class="email-text">
+                                                    <p class="mail">sabina@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+                                            <div class="con check-user">
+                                                <div class="profil_photo v_b" style="background-image:url(img/v.jpg)">
+                                                </div>
+                                                <div class="head-text">
+                                                    <h5>Vahab Valiyev</h5>
+                                                </div>
+                                                <div class="date-text">
+                                                    <p>03 April 2017</p>
+                                                </div>
+                                                <div class="select">
+                                                    <input type="checkbox" id="cbtest6" />
+                                                    <label for="cbtest6" class="check-box"></label>
+                                                </div>
+                                                <div class="email-text">
+                                                    <p class="mail">vahab@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-xl-3 col-sm-6 col-md-4 col-xs-12">
+                                            <div class="con check-user">
+                                                <div class="profil_photo sv_b" style="background-image:url(img/sa.jpg)">
+                                                </div>
+                                                <div class="head-text">
+                                                    <h5>Vefa Samedova</h5>
+                                                </div>
+                                                <div class="date-text">
+                                                    <p>02 January 2017</p>
+                                                </div>
+                                                <div class="select">
+                                                    <input type="checkbox" id="cbtest7" />
+                                                    <label for="cbtest7" class="check-box "></label>
+                                                </div>
+                                                <div class="email-text">
+                                                    <p class="mail">samedova@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ======================== END Render   Body  END===============================		 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid left-reset">
+                <div class="row">
+                    <div class="col-md-1 hidden-sm hidden-xs">
+                        <div class="logo-sector">
+                            <div class="back-color">
+                                <div class="img-area">
+                                    <a href="">
+										<img class="logout1" src="img/logout.png" alt="">
+										<img class="logout2" src="img/logout-2.png" alt="">
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="foot-sector">
+                            <span class="foot-text">© 2017 Fbposter.  All rights reserved</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal -->
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script src="js/easy-responsive-tabs.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>
